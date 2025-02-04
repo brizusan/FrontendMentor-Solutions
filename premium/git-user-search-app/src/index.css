@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  font-family: 'Space Mono', monospace;
+}
+
+.contenedor{
+  @apply w-5/6 mx-auto md:w-11/12
+}
+
+@media(min-width:768px){
+  .grilla{
+    display: grid;
+    grid-template-columns: 128px 1fr 1fr;
+  }
+
+}

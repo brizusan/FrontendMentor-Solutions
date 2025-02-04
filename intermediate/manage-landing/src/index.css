@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+li{
+  list-style: none;
+}
+
+.contenedor{
+  @apply max-w-7xl mx-auto container w-11/12
+}
+
+.title{
+  @apply text-5xl text-slate-800  text-center font-bold
+}
+
+.subtitle{
+  @apply text-3xl text-slate-800 text-center font-bold
+}
+
+.title-sm{
+  @apply text-xl text-slate-800 font-bold
+}
+
+.paragraph{
+  @apply text-gray-500
+}
+
+.cta{
+  @apply py-3 px-6 capitalize font-medium bg-orange-600 text-white rounded-3xl text-sm shadow-md shadow-orange-600
+}
+
+.cta-m{
+  @apply py-3 px-6 capitalize font-bold bg-white text-orange-600 rounded-3xl text-sm shadow-sm
+}
+
+.error{
+  @apply text-red-600 font-semibold text-xs text-center absolute -bottom-5 left-3
+}
+
+
+.intro{
+  min-height: 100vh;
+  background-image: url("/images/bg-tablet-pattern.svg");
+  background-size: contain;
+  background-position:-400px -500px;
+}
+
+.simple{
+  background-image: url("/images/bg-simplify-section-mobile");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+@media(min-width:1024px) {
+  .intro{
+    min-height: 100vh;
+    background-size: cover;
+    background-position:top bottom;
+
+  }
+}

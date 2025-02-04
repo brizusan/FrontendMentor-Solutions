@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --Linear:hsl(249, 99%, 64%);
+  --Linear-2:hsl(278, 94%, 30%);
+  --Red: hsl(0, 100%, 66%);
+  --White: hsl(0, 0%, 100%);
+  --Violet: hsl(270, 3%, 87%);
+  --Grayish-violet: hsl(279, 6%, 55%);
+  --Dark-violet: hsl(278, 68%, 11%);
+}
+
+body{
+  font-family: 'Space Grotesk', sans-serif;
+  overflow: hidden;
+}
+
+header{
+  min-height: 30vh;
+  background-image: url(/images/bg-main-mobile.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.contenedor{
+  position: absolute;
+  left: 5%;
+  top: 25%;
+}
+
+@media (min-width:450px){
+  .contenedor{
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  }
+}
+
+.card-front,
+.card-back{
+  width: 280px;
+  height: 165px;
+  border-radius: 0.5rem;
+}
+
+@media (min-width:450px){
+  .card-front,
+  .card-back{
+    width: 320px;
+    height: 180px;
+  }
+}
+
+.card-front{
+  background-image: url(/images/bg-card-front.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  top: -71px;
+}
+
+.card-back{
+  left: 50px;
+  background-image: url(/images/bg-card-back.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+
+.card-back .label{
+  top: 43%;
+  right: -40%;
+  font-size: 0.85rem;
+}
+
+@media(min-width:425px){
+  .card-back .label{
+    right: -35%;
+  }
+  .card-front .padding-4{
+    padding-top: 3rem;
+  }
+}
+
+form{
+  min-width: 340px;
+  max-width: 500px;
+  justify-content: center;
+}
+
+.caja{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 0.25rem;
+}
+
+
+.caja input{
+  width: 100%;
+  border-radius: 0.5rem;
+  border : 1px solid var(--Violet);
+  padding: 0.5rem 1rem;
+}
+
+.caja input::placeholder{
+  color: var(--Violet);
+}
+
+.cajas{
+  display: flex;
+  gap: 1rem;
+}
+
+@media(min-width:1200px){
+
+  header{
+    background-image: url(/images/bg-main-desktop.png);
+  }
+
+  .grid{
+    height: 100vh;
+
+    display: grid;
+    grid-template-columns: 500px 1fr;
+    column-gap: 2rem;
+  }
+
+  .contenedor{
+    top: 50%;
+    left: 80%;
+    
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
+  }
+
+  .card-back,
+  .card-front{
+    width: 380px;
+    height: 200px;
+  }
+
+  .card-back{
+    bottom: 0;
+    grid-row: 2/3;
+  }
+  .card-front{
+    grid-row: 1/2;
+    top: -50px;
+  }
+
+  .card-back .label{
+    right: -25%;
+    top: 45%;
+  }
+  .card-front .padding-4{
+    padding-top: 4rem;
+  }
+
+
+  main{
+    justify-self: center;
+    align-self: center;
+  }
+
+}
+
+@media(min-width:1400px){
+  .contenedor{
+    left: 95%;
+  }
+
+}

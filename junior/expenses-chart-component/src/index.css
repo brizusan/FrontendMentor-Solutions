@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --Red: hsl(10, 79%, 65%);
+  --Cyan: hsl(186, 34%, 60%);
+  --Dark-brown: hsl(25, 47%, 15%);
+  --Medium-brown: hsl(28, 10%, 53%);
+  --Cream: hsl(27, 66%, 92%);
+  --Orange: hsl(33, 100%, 98%);
+}
+
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-size: 1.75rem;
+  background-color: var(--Cream);
+  display: grid;
+  width: 100vw;
+  min-height: 100vh;
+  align-items: center;
+
+}
+
+header{
+  background-color: var(--Red);
+}
+
+.barrita{
+  height: 1px;
+  @apply bg-gray-200
+}

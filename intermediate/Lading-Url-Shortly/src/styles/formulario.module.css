@@ -1,0 +1,52 @@
+.formulario{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.25rem;
+  background-image: url('/images/bg-shorten-mobile.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  overflow: hidden;
+}
+
+.input{
+  padding: 0.85rem 1rem;
+  border-radius:0.5rem;
+  border: none;
+}
+
+.error{
+  text-align: center;
+  font-weight: 700;
+  color: red;
+}
+
+
+
+@media(min-width:860px){
+  .formulario{
+    background-image: url('/images/bg-shorten-desktop.svg');
+    background-size: cover;
+    flex-direction: row;
+    padding: 1.65rem;
+  }
+  .input{
+    flex: 2;
+  }
+  .error{
+    position: absolute;
+    bottom: 5px;
+    left:5%;
+  }
+}
+@media(min-width:1280px){
+  .formulario{
+    padding: 2rem;
+  }
+  .error{
+    left:2.5%;
+    bottom: 10px;
+
+  }
+}

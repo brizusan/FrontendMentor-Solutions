@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  
+
+  <link rel="stylesheet" href="assets/css/index.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="nav wrapper">
+      <a href="#">
+        <img  class="logo" src="assets/images/logo.svg" alt="snap logo">
+      </a>
+
+      <ul class="nav__list">
+        <li class="contenedor">
+          <input type="checkbox" id="features">
+          <label for="features" class="features">
+            Features
+            <img src="assets/images/icon-arrow-down.svg" alt="">
+          </label>
+          <ul class="list">
+            <li>
+              <a href="#" class="link">
+                <img src="assets/images/icon-todo.svg" alt="">
+                Todo List
+              </a>
+            </li>
+            <li>
+              <a href="#" class="link">
+                <img src="assets/images/icon-calendar.svg" alt="">
+                Calendar
+              </a>
+            </li>
+            <li>
+              <a href="#" class="link">
+                <img src="assets/images/icon-reminders.svg" alt="">
+                Reminders
+              </a>
+            </li>
+            <li>
+              <a href="#" class="link">
+                <img src="assets/images/icon-planning.svg" alt="">
+                Planing
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="contenedor">
+          <input type="checkbox" id="company">
+          <label for="company" class="company">
+            Company
+            <img src="assets/images/icon-arrow-down.svg" alt="">
+          </label>
+          <ul class="list list-2">
+            <li>
+              <a href="#" class="link">
+                History
+              </a>
+            </li>
+            <li>
+              <a href="#" class="link">
+                Our Team
+              </a>
+            </li>
+            <li>
+              <a href="#" class="link">
+                Blog
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Careers</a>
+        </li>
+        <li>
+          <a href="#">About</a>
+        </li>
+
+        <div class="actions">
+          <button class="btn">Login</button>
+          <button class="btn-m">Register</button>
+        </div>
+      </ul>
+
+      <input type="checkbox"  id="nav-check" class="check">
+      <label for="nav-check">
+        <div class="nav__icon">
+          <img class="menu" src="assets/images/icon-menu.svg" alt="">
+          <img class="close" src="assets/images/icon-close-menu.svg" alt="">
+        </div>
+      </label>
+    </nav>
+  </header>
+  <main class="main">
+    <picture>
+      <source srcset="./assets/images/image-hero-desktop.png" media="(min-width: 960px)">
+      <img class="remote__img" src="./assets/images/image-hero-mobile.png" alt="remote work image">
+     </picture>
+    <section class="remote wrapper">
+      <div class="remote__content">
+        <h1>Make remote work</h1>
+        <p>Get your team in sync, no matter your location. Streamline processes, 
+          create team rituals, and watch productivity soar.
+        </p>
+        <button class="cta">Learn More</button>
+      </div>
+      <footer class="remote__footer">
+        <img src="assets/images/client-databiz.svg" alt="logo icon">
+        <img src="assets/images/client-audiophile.svg" alt="logo icon">
+        <img src="assets/images/client-meet.svg" alt="logo icon">
+        <img src="assets/images/client-maker.svg" alt="logo icon">
+      </footer>
+    </section>
+
+  </main>
+</body>
+</html>

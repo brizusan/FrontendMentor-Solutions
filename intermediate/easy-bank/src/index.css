@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.wrapper{
+  @apply max-w-screen-2xl w-11/12 mx-auto
+}
+
+.paragraph{
+  @apply text-gray-500  max-w-sm mx-auto 
+}
+
+.btn{
+  @apply border-none py-2 px-6 bg-gradient-to-r from-green-500 to-blue-300 text-white capitalize font-medium rounded-3xl
+}
+
+
+
+.grilla{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax(350px, 1fr) );
+}
+
+.card{
+  border-radius: 0.5rem;
+  overflow: hidden;
+  background-color: white;
+  max-width: 35rem;
+}
+.option{
+  max-width: 28rem;
+}
+
+.icon:hover{
+  fill: red;
+  cursor: pointer;
+}
+.nav__btn{
+  display: none;
+}
+
+
+.hero__device{
+  background-image: url('/easy-bank/images/bg-intro-mobile.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height:360px
+}
+
+@media(min-width:425px){
+  .hero__device{
+    height: 450px;
+  }
+}
+@media(min-width:620px){
+  .hero__device{
+    height: 550px;
+  }
+}
+
+@media(min-width:768px){
+  .nav__icons{
+    display: none;
+  }
+  .nav__links{
+    background-color: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0;
+    position: relative;
+    top: 0;
+  }
+
+  .nav__btn{
+    display: block;
+  }
+}
+
+@media(min-width:1024px){
+  .hero__device{
+    background-image: url('/images/bg-intro-desktop.svg');
+    height: 80vh;
+    background-size: 150%;
+  }
+}
+
+@media(min-width:1320px){
+  .hero__device{
+    background-position: 30px -300px;
+
+  }
+}
+
+

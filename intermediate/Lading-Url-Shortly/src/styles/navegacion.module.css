@@ -1,0 +1,16 @@
+.nav{
+  display: flex;
+  justify-content:space-between ;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+
+.links{
+  display: flex;
+  gap: 1rem;
+}
+
+.links li a{
+  text-transform: capitalize;
+}

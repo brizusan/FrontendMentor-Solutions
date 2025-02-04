@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive pricing component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="assets/css/index.css">
+
+  <script src="./assets/js/index.js" defer></script>
+</head>
+<body>
+  <main>
+    <div class="wrapper">
+      <header class="simple">
+        <h1>Simple, traffic-based pricing</h1>
+        <p>Sign-up for our 30-day trial. No credit card required.</p>
+      </header>
+      <section class="price">
+        <div class="grid">
+          <h2 class="title">100k pageviews</h2>
+          <div class="range__content">
+            <input type="range" id="range" class="slider">
+          </div>
+          <div class="flex">
+            <h3>$16.00</h3>
+            <span>/ month</span>
+          </div>
+        </div>
+        <div class="price__month">
+          <div class="price__toogle">
+            <p>Monthly Billing</p>
+            <div class="toogle">
+              <input type="checkbox" id="check">
+              <label class="circle" for="check"></label>
+            </div>
+            <div class="percentaje">
+              <p>Yearly Billing</p>
+              <small class="percentaje">-25%</small>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <footer>
+          <ul>
+            <li>
+              <img src="assets/images/icon-check.svg" alt="icon check image">
+              <p>Unlimited websites</p>
+            </li>
+            <li>
+              <img src="assets/images/icon-check.svg" alt="icon check image">
+              <p>100% data ownership</p>
+            </li>
+            <li>
+              <img src="assets/images/icon-check.svg" alt="icon check image">
+              <p>Email reports</p>
+            </li>
+          </ul>
+          <button class="cta">Start my trial</button>
+        </footer>
+      </section>
+    </div>
+  </main>
+</body>
+</html>

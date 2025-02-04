@@ -1,0 +1,11 @@
+{
+  "name": "frontendmentor",
+  "version": "1.0.0",
+  "description": "Soluciones Retos - FrontendMentor",
+  "main": "datos.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "@brizusan",
+  "license": "ISC"
+}

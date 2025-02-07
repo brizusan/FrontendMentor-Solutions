@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+.image{
+  min-height: 40vh;
+  background-image: url(/assets/images/illustration-sign-up-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border-bottom-left-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+}
+
+@media(min-width:640px){
+  .image{
+    background-image: url(/assets/images/illustration-sign-up-desktop.svg);
+    border-radius: 0.85rem;
+    min-height: 60vh;
+  }
+}
